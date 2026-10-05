@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- 地図データ・出力ファイル ---
+*.pbf
+*.osm.pbf
+*.gpkg
+*.zip
+*.geojson
+footway_output/
