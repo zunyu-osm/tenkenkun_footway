@@ -1,6 +1,6 @@
 # footway-qc-colab
 
-OpenStreetMap の歩道データ（`highway=footway` / `path` / `cycleway` / `steps`）を **都道府県ごと** に取り出し、**QGIS で開ける GeoPackage（.gpkg）** にして表示し OpenStreetMapの編集を補助する Google Colab ノートブックです。
+OpenStreetMap の歩道・小道・自転車道・階段（`highway=footway` / `path` / `cycleway` / `steps`）を **都道府県ごと** に取り出し、**QGIS で開ける GeoPackage（.gpkg）** にして表示し OpenStreetMapの編集を補助する Google Colab ノートブックです。
 あわせて、確認したほうがよい場所を **品質チェックの候補レイヤー** として出力できます。
 
 ## 使い方
