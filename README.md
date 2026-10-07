@@ -63,7 +63,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 - 距離の計算は、県の経度から選んだ UTM 座標系（メートル）で行います。
 
 ## QGISでのOpenStreetMapの表示の仕方
-- 表示がない場合追加できます、メニュー左側のブラウザのXYZタイルを右クリックして、表示されたXYZ接続タブの名前のところを OpenStreetMap にし、URLをhttps://tile.openstreetmap.org/{z}/{x}/{y}.png と入力してOKと押します。
+- 表示がない場合追加できます、メニュー左側のブラウザのXYZタイルを右クリックして、表示されたXYZ接続タブの名前のところを OpenStreetMap にし、URLをhttps://tile.openstreetmap.org/{z}/{x}/{y}.png と入力してOKと押します。レイヤで一番下にします。
 
 ## 注意
 
