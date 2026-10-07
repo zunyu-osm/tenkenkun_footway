@@ -2,6 +2,11 @@
 
 これは、 OpenStreetMap の 歩道・小道・自転車道・階段（`highway=footway` / `path` / `cycleway` / `steps`）を 都道府県ごと に抽出し、QGIS で開ける GeoPackage（.gpkg） にして表示し **OpenStreetMapの歩道編集を補助する Google Colab ノートブック** です。
 あわせて、確認したほうがよい場所を **確認候補レイヤ** として出力できます。
+<p align="center">
+<img width="640" height="320" alt="Image" src="https://github.com/user-attachments/assets/583cda06-8176-45c6-b362-e70866c51b7d" />
+  <br>
+　© OpenStreetMap contributors
+</p>
 
 ## 使い方
 
