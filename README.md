@@ -102,6 +102,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 ## データの出典とライセンス
 
 - 地図データ: © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors（[ODbL](https://opendatacommons.org/licenses/odbl/)）。配信: [Geofabrik](https://download.geofabrik.de/)
+- 都道府県境データ: [dataofjapan/land](https://github.com/dataofjapan/land) の japan.geojson を使用しています。元データは国土地理院「地球地図日本」に由来します。
 - 出力される .gpkg も OSM のデータから作られているため、ODbL の対象です。公開や再配布をするときは、出典を表記してください。
 - このリポジトリのコード: MIT License（`LICENSE` を参照）
 
