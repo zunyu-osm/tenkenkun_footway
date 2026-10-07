@@ -18,7 +18,7 @@
 
 ## 出力ファイル（例：宮城県）
 
-ZIPファイルの名前は `宮城県の歩道.zip` となります。
+ZIPファイルの名前は `宮城県の歩道データ.zip` となります。
 
 | ファイル | QGIS のレイヤ名 | 内容 |
 |---|---|---|
@@ -52,7 +52,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 |ノード未共有	|歩道と道路が重なっているのに、つなぐ点(ノード)がない。線が交わっているだけで、データ上はつながっていない。|
 |横断歩道ノードなし	|歩道と道路は点（ノード）でつながっているが、その点に highway=crossing が付いていない。|
 |横断歩道ノードの種類なし	|その点に highway=crossing はありますが、どんな横断歩道かを表す crossing=* が付いていません。値の例: 信号なしマークあり uncontrolled / 信号ありマークあり traffic_signals / マークなし unmarked など|
-|横断歩道wayの種類なし	|道路との交点が見つからない footway=crossing の歩道で、歩道にも歩道上の点にも crossing=* が付いていない。|
+|横断歩道の種類なし	|道路との交点が見つからない footway=crossing の歩道で、歩道にも歩道上の点にも crossing=* が付いていない。|
 
 正しい状態の例は、歩道と道路が同じ点（ノード）でつながっていて、その点に highway=crossing と crossing=uncontrolled などが付いている形です。
 
@@ -66,7 +66,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 #### 調べ方のルール:
 
 - 対象にする道路は、service を除く主な道路です。service は駐車場の出入口などが多く、誤検出が増えるためです。
-- 歩道の端が道路に触れているだけの場所（T字）は、footway=crossing などが付いた横断歩道だけを調べます。普通の歩道が道路の端につながっているだけの場所-は、問題なしとして扱います。
+- 歩道の端が道路に触れているだけの場所（T字）は、footway=crossing などが付いた横断歩道だけを調べます。普通の歩道が道路の端につながっているだけの場所は、問題なしとして扱います。
 - 橋・トンネル、layer が違うもの（立体交差）は調べません。
 - 道路が交点で2本に分かれている場合など、同じ交点は1件だけ出します。
 - 横断歩道の点（ノード）を読み込めなかったときは、「ノード未共有」だけを調べます
@@ -91,6 +91,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 
 ## QGISでのOpenStreetMapの表示の仕方
 - 表示がない場合、追加できます。メニュー左側のブラウザのXYZタイルを右クリックして、表示されたXYZ接続タブの名前のところを OpenStreetMap にし、URLをhttps://tile.openstreetmap.org/{z}/{x}/{y}.png と入力してOKと押します。レイヤで一番下にします。
+  利用ポリシー https://operations.osmfoundation.org/policies/tiles/
 
 ## 注意
 
@@ -103,7 +104,8 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 
 - 地図データ: © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors（[ODbL](https://opendatacommons.org/licenses/odbl/)）。配信: [Geofabrik](https://download.geofabrik.de/)
 - 都道府県境データ: [dataofjapan/land](https://github.com/dataofjapan/land) の japan.geojson を使用しています。元データは国土地理院「地球地図日本」に由来します。
-- 出力される .gpkg も OSM のデータから作られているため、ODbL の対象です。公開や再配布をするときは、出典を表記してください。
+- 出力される .gpkg も OSM のデータから作られているため、ODbL の対象です。公開や再配布をするときは、ODbL 出典を表記してください。
 - このリポジトリのコード: MIT License（`LICENSE` を参照）
 
-
+## 最後に
+このプロジェクトは、AIツールの支援を受けて開発されました。
