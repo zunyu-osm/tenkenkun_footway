@@ -5,7 +5,7 @@
 
 ## 使い方
 
-1. 下のボタンから Colab でノートブックを開きます。
+1. 下のボタンから Google Colab でノートブックを開きます。
 
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zunyu-osm/footway-qc-colab/blob/main/footway_qc_colab.ipynb)
 
@@ -70,6 +70,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 - 大きい県（北海道など）は、無料版 Colab ではメモリ不足で止まることがあります。
 - 全国の一括処理はできません。県ごとに実行してください。
 - 簡易ポリゴンのため、県境の近くでは、隣の県の way が少し混ざることがあります。
+- 品質チェックで表示される場所すべてが誤りではありません、 **確認してほしい候補** です。
 
 ## データの出典とライセンス
 
