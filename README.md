@@ -68,7 +68,7 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 #### QC4 のレイヤに入っている主な列:
 
 - contact … 道路との位置関係（交差 / 端点接触 / 交点なし）。端点接触は、歩道の端が道路にちょうど触れている状態（T字）です。
-- road_osm_id, road_highway … 相手の道路
+- road_osm_id, road_highway … 対象の道路
 - footway, crossing … 歩道に付いているタグ
 - way_is_crossing … 歩道に横断のタグ（footway=crossing など）が付いているか
 
@@ -94,13 +94,13 @@ QC1〜QC5 は、品質チェックを「する」を選んだときだけ出力�
 ## 動作の仕組み
 
 - 表示したい都道府県を選んでもらい、 Geofabrik の地方別ファイル（北海道、東北、関東、中部、関西、中国、四国、九州）を取得します。
-- 県の範囲だけを `osmium extract` で切り出してから読み込みます。osmium-tool は自動でインストールします。失敗したときは、地方全体のファイルから読みます。
+- 都道府県の範囲を `osmium extract` で切り出してから読み込みます。osmium-tool は自動でインストールします。失敗したときは、地方全体のファイルから読みます。
 - 都道府県の境界は、[dataofjapan/land](https://github.com/dataofjapan/land) の簡易ポリゴンを使います。取得できないとき、品質チェックは中止します。チェックなしの場合は、警告を出して bbox で代用します。
 - 距離の計算は、県の経度から選んだ UTM 座標系（メートル）で行います。
 
 ## QGISでのOpenStreetMapの表示の仕方
 - 表示がない場合、追加できます。メニュー左側のブラウザのXYZタイルを右クリックして、表示されたXYZ接続タブの名前のところを OpenStreetMap にし、URLをhttps://tile.openstreetmap.org/{z}/{x}/{y}.png と入力してOKと押します。レイヤで一番下にします。
-  利用ポリシー https://operations.osmfoundation.org/policies/tiles/
+  利用ポリシー： https://operations.osmfoundation.org/policies/tiles/
 
 ## 注意
 
