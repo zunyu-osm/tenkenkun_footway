@@ -1,7 +1,7 @@
 # tenkenkun_footway
 
-これは、 OpenStreetMap の 歩道・小道・自転車道・階段（`highway=footway` / `path` / `cycleway` / `steps`）を 都道府県ごと に抽出し、QGIS で開ける GeoPackage（.gpkg） にして表示し **OpenStreetMapの歩道編集を補助する Google Colab ノートブック** です。
-あわせて、確認したほうがよい場所を **確認候補レイヤ** として出力できます。
+これは、 OpenStreetMap の 歩道・小道・自転車道・階段を都道府県ごとに抽出し、線データとして QGIS で表示できる GeoPackageファイル（.gpkg）を出力する **OpenStreetMapの編集を補助するためのGoogle Colabノートブック** です。
+あわせて、確認が必要と思われる場所を **確認候補レイヤ** として出力できます。
 <p align="center">
 <img width="640" height="320" alt="Image" src="https://github.com/user-attachments/assets/583cda06-8176-45c6-b362-e70866c51b7d" />
   <br>
